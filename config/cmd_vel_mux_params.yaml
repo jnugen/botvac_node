@@ -1,0 +1,22 @@
+# Configuration for subscribers to multiple cmd_vel sources.
+#
+# Individual subscriber configuration:
+#   name:           Source name
+#   topic:          The topic that provides cmd_vel messages
+#   timeout:        Time in seconds without incoming messages to consider this topic inactive
+#   priority:       Priority: an UNIQUE unsigned integer from 0 (lowest) to MAX_INT 
+#   short_desc:     Short description (optional)
+
+cmd_vel_mux:
+  ros__parameters:
+    subscribers:
+      teleoperation:
+        topic:       "input/teleop"
+        timeout:     0.2
+        priority:    7
+        short_desc:  "Keyboard operation"
+      navigation:
+        topic:       "input/navi"
+        timeout:     2.0
+        priority:    5
+        short_desc:  "Navigation stack controller"

@@ -1,0 +1,23 @@
+# Default parameters used by the 'velocity_smoother' module.
+# - velocity limits are around a 10% above the physical limits
+# - acceleration limits are just low enough to avoid jerking
+
+velocity_smoother:
+  # limits (Mandatory)
+  speed_lim_v: 0.8
+  speed_lim_w: 5.4
+
+  accel_lim_v: 0.6
+  accel_lim_w: 5.4
+
+  # multiply the acceleration limit by this to permit faster decellerations
+  decel_factor: 1.0
+
+  # recompute smoothed velocities at this rate
+  frequency: 20.0
+
+  # Robot velocity feedback type:
+  #  0 - none (default)
+  #  1 - odometry
+  #  2 - end robot commands
+  robot_feedback: 1
