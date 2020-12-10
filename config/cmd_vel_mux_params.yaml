@@ -16,7 +16,7 @@ cmd_vel_mux:
         priority:    7
         short_desc:  "Keyboard operation"
       navigation:
-        topic:       "input/navi"
+        topic:       "input/nav"
         timeout:     2.0
         priority:    5
         short_desc:  "Navigation stack controller"
