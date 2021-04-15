@@ -40,7 +40,7 @@ You can check this out into your workspace as follows:
 
 ## Run Teleop on PC
 
-    ros1 run teleop_twist_keyboard teleop_twist_keyboard
+    ros2 run teleop_twist_keyboard teleop_twist_keyboard
 
 
 ## Command to save map on PC
