@@ -19,6 +19,7 @@ You can check this out into your workspace as follows:
     git clone https://github.com/jnugen/neato_robot.git
     git clone https://github.com/kobuki-base/cmd_vel_mux.git
     git clone https://github.com/kobuki-base/velocity_smoother.git
+    git clone -b foxy-devel https://github.com/ros-planning/navigation2.git
     cd ..
     rosdep update
     rosdep install --from-paths src --ignore-src -r -y
@@ -29,11 +30,21 @@ You can check this out into your workspace as follows:
 
     ros2 launch botvac_node botvac_base_only.launch.py
 
-## Run Teleop on PC
+## Launch on PC
 
-    ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r cmd_vel:=raw_cmd_vel
+   ros2 launch nav2_bringup bringup_launch.py use_sim_time:=False autostart:=True map:=/home/camp/colcon_ws/src/navigation2/nav2_bringup/bringup/maps/map.yaml slam:=True
 
 ## Run RViz2 on PC
 
-    rviz2
+   launch nav2_bringup rviz_launch.py 
+
+## Run Teleop on PC
+
+    ros1 run teleop_twist_keyboard teleop_twist_keyboard
+
+
+## Command to save map on PC
+
+    ros2 run nav2_map_server map_saver_cli -f ~/colcon_ws/src/navigation2/nav2_bringup/bringup/maps/map --ros-args -p save_map_timeout:=5000
+
 
