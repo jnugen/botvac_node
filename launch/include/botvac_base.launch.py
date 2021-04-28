@@ -33,7 +33,7 @@ def generate_launch_description():
             ),
             launch_arguments = {
                 'input_cmd_vel_topic': 'raw_cmd_vel',
-                'feedback_cmd_vel_topic': 'robot_cmd_vel',
+                'feedback_cmd_vel_topic': 'cmd_vel',
                 'output_cmd_vel_topic': 'smoothed_cmd_vel'
             }.items()
         ),
@@ -47,7 +47,7 @@ def generate_launch_description():
                os.path.join(share_dir, 'config', 'cmd_vel_mux_params.yaml')
            ],
            remappings = [
-               ('cmd_vel_mux/output', 'robot_cmd_vel'),
+               ('cmd_vel_mux/output', 'cmd_vel'),
                ('cmd_vel_mux/input/nav', 'cmd_vel'),
                ('cmd_vel_mux/input/teleop', 'smoothed_cmd_vel')
            ]
@@ -73,7 +73,7 @@ def generate_launch_description():
                 {'port': '/dev/ttyACM0'}
             ],
             remappings = [
-                ('cmd_vel', 'robot_cmd_vel'),
+                ('cmd_vel', 'cmd_vel'),
                 ('base_scan', 'scan')
             ],
             on_exit = launch.actions.Shutdown()
