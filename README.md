@@ -33,6 +33,8 @@ You can check this out into your workspace as follows:
 ## Launch on PC
 
    ros2 launch nav2_bringup bringup_launch.py use_sim_time:=False autostart:=True map:=/home/camp/colcon_ws/src/navigation2/nav2_bringup/bringup/maps/map.yaml slam:=True
+   
+   Note: Load from directory on your workstation
 
 ## Run RViz2 on PC
 
@@ -46,5 +48,6 @@ You can check this out into your workspace as follows:
 ## Command to save map on PC
 
     ros2 run nav2_map_server map_saver_cli -f ~/colcon_ws/src/navigation2/nav2_bringup/bringup/maps/map --ros-args -p save_map_timeout:=5000
-
-
+    
+    Note: Save to directory on your workstation
+    
