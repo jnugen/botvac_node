@@ -36,7 +36,7 @@ You can check this out into your workspace as follows:
 
 ## Launch on PC
 
-   ros2 launch nav2_bringup bringup_launch.py use_sim_time:=False autostart:=True map:=/home/<user>/<ws>/src/navigation2/nav2_bringup/bringup/maps/map.yaml slam:=True
+   ros2 launch nav2_bringup bringup_launch.py use_sim_time:=False autostart:=True map:=/home/user/ws/src/navigation2/nav2_bringup/bringup/maps/map.yaml slam:=True
    
    Note: Load from directory on your workstation. Remove "slam:=True" to load saved map.
 
@@ -58,7 +58,7 @@ You can check this out into your workspace as follows:
     
 ## To load in map and navigate: 
 
-   ros2 launch nav2_bringup bringup_launch.py use_sim_time:=False autostart:=True map:=/home/<user>/<ws>/src/navigation2/nav2_bringup/bringup/maps/map.yaml
+   ros2 launch nav2_bringup bringup_launch.py use_sim_time:=False autostart:=True map:=/home/user/ws/src/navigation2/nav2_bringup/bringup/maps/map.yaml
     
 ## Set the robot's pose. Select a target on the map and the robot will navigate there.
     
