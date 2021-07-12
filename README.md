@@ -18,7 +18,7 @@ You can check this out into your workspace as follows:
 
     cd <ws>/src
     git clone https://github.com/cpeavy2/botvac_node.git
-    git clone https://github.com/jnugen/neato_robot.git
+    git clone https://github.com/cpeavy2/neato_robot.git
     git clone https://github.com/kobuki-base/cmd_vel_mux.git
     git clone https://github.com/kobuki-base/velocity_smoother.git
     git clone -b foxy-devel https://github.com/ros-planning/navigation2.git
@@ -32,7 +32,7 @@ You can check this out into your workspace as follows:
 
 ## Launch on RPi4
 
-    ros2 launch botvac_node botvac_base_only.launch.py
+    ros2 launch botvac_node botvac_base.launch.py
 
 ## Launch on PC
 
