@@ -32,7 +32,7 @@ You can check this out into your workspace as follows:
 
 ## Launch on RPi4
 
-    ros2 launch botvac_node botvac_base_only.launch.py
+    ros2 launch botvac_node botvac_base.launch.py
 
 ## Launch on PC
 
