@@ -30,7 +30,7 @@ Check these repos out into your workspace as follows:
     
     colcon build                                           # This will take a long time so use an AC adapter not battery power.
  
-## Power Pi with batter bank and put into dirt bin on Botvac. Connect Pi to micro USB socket in the dirt bin and make sure the robot is on.
+## Power Pi with battery bank and put into dirt bin on Botvac. Connect Pi to micro USB socket in the dirt bin and make sure the robot is on.
 ## ssh to Pi4 and launch
 
     ros2 launch botvac_node botvac_base.launch.py          # This launches the Neato Node which calls the Neato Driver.
