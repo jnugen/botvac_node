@@ -49,7 +49,7 @@ Check these repos out into your workspace as follows:
  
     ros2 run teleop_twist_keyboard teleop_twist_keyboard
  
-## Drive the robot around to create map
+## To create map drive robot around using the teleop keyboard node
  
 ## After finishing the map use this command to save map on PC
 
