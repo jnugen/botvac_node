@@ -66,4 +66,6 @@ Note: Save to directory on your workstation. That is use your own ROS2 workspace
 ``` 
    ros2 launch nav2_bringup bringup_launch.py use_sim_time:=False autostart:=True map:=/home/user/ws/src/navigation2/nav2_bringup/bringup/maps/map.yaml
 ```
+   Again, load from user and workspace directory on your workstation.
+
 ## Set the robot's pose. Select a target goal on the map and the robot will autonomously navigate there.
