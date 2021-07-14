@@ -54,8 +54,7 @@ Check these repos out into your workspace as follows:
 ## After finishing the map use this command to save map on PC
 
 ```
-    ros2 run nav2_map_server map_saver_cli -f ~/<ws>/src/navigation2/nav2_bringup/bringup/maps/map --ros-args -p save_map_timeout:=5000
-```
+ros2 run nav2_map_server map_saver_cli -f ~/<ws>/src/navigation2/nav2_bringup/bringup/maps/map --free 0.196 --ros-args -p save_map_timeout:=5000```
 
 Note: Save to directory on your workstation. That is use your own ROS2 workspace.
  
