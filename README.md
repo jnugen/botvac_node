@@ -42,9 +42,9 @@ Check these repos out into your workspace as follows:
    Note: Load from directory on your workstation. Remove "slam:=True" to load saved map.
  
 ## Run RViz2 on PC
- 
+ ```
    ros2 launch nav2_bringup rviz_launch.py 
- 
+ ```
 ## Run Teleop on PC
  
     ros2 run teleop_twist_keyboard teleop_twist_keyboard
