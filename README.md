@@ -36,9 +36,9 @@ Check these repos out into your workspace as follows:
     ros2 launch botvac_node botvac_base.launch.py          # This launches the Neato Node which calls the Neato Driver.
  
 ## Launch Slam Toolbox on PC
- 
+ ```
    ros2 launch nav2_bringup bringup_launch.py use_sim_time:=False autostart:=True map:=/home/user/ws/src/navigation2/nav2_bringup/bringup/maps/map.yaml slam:=True
-   
+ ```  
    Note: Load from directory on your workstation. Remove "slam:=True" to load saved map.
  
 ## Run RViz2 on PC
