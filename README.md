@@ -7,13 +7,13 @@ This repository contains ROS2 Foxy launch files for the Neato Botvac robots.
 ## Install on Ubuntu PC workstation and Raspberry Pi4
  
 Prerequisites:
- 
+``` 
     sudo apt install build-essential
     sudo apt install ros-foxy-xacro
     sudo apt install python3-rosdep2
- 
+``` 
 Check these repos out into your workspace as follows:
- 
+``` 
     cd <ws>/src
     git clone https://github.com/cpeavy2/botvac_node.git
     git clone https://github.com/cpeavy2/neato_robot.git
@@ -29,12 +29,12 @@ Check these repos out into your workspace as follows:
     source ~/<ws>/install/setup.bash                       # sources setup.bash for current session
  
     colcon build                                           # This will take a long time so use an AC adapter not battery power.
- 
+``` 
 ## Power Pi with battery bank and put into dirt bin on Botvac. Connect Pi to micro USB socket in the dirt bin and make sure the robot is on.
 ## ssh to Pi4 and launch
- 
+``` 
     ros2 launch botvac_node botvac_base.launch.py          # This launches the Neato Node which calls the Neato Driver.
- 
+``` 
 ## Launch Slam Toolbox on PC
 ```
     ros2 launch nav2_bringup bringup_launch.py use_sim_time:=False autostart:=True map:=/home/user/ws/src/navigation2/nav2_bringup/bringup/maps/map.yaml slam:=True
