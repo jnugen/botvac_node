@@ -59,10 +59,12 @@ Check these repos out into your workspace as follows:
 
 Note: Save to directory on your workstation. That is use your own ROS2 workspace.
  
-## To load in map and navigate: 
- 
+
 ## After creating the map and saving it kill the slam toolbox terminal and launch the below launch flle to load in the map you saved.
+
+## To load in map and navigate: 
+
 ``` 
    ros2 launch nav2_bringup bringup_launch.py use_sim_time:=False autostart:=True map:=/home/user/ws/src/navigation2/nav2_bringup/bringup/maps/map.yaml
-``` 
+```
 ## Set the robot's pose. Select a target goal on the map and the robot will autonomously navigate there.
