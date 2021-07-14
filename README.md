@@ -7,13 +7,13 @@ This repository contains ROS2 Foxy launch files for the Neato Botvac robots.
 ## Install on Ubuntu PC workstation and Raspberry Pi4
  
 Prerequisites:
-``` 
+```
     sudo apt install build-essential
     sudo apt install ros-foxy-xacro
     sudo apt install python3-rosdep2
-``` 
+```
 Check these repos out into your workspace as follows:
-``` 
+```
     cd <ws>/src
     git clone https://github.com/cpeavy2/botvac_node.git
     git clone https://github.com/cpeavy2/neato_robot.git
@@ -55,7 +55,7 @@ Check these repos out into your workspace as follows:
 
 ```
 ros2 run nav2_map_server map_saver_cli -f ~/<ws>/src/navigation2/nav2_bringup/bringup/maps/map --free 0.196 --ros-args -p save_map_timeout:=5000```
-
+```
 Note: Save to directory on your workstation. That is use your own ROS2 workspace.
  
 
